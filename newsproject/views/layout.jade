@@ -1,0 +1,19 @@
+mixin sayHi
+  p Hi
+
+mixin testmoudel
+  div.item_moudel
+    ul
+      each item in test
+        li id:#{item.id} 内容:#{item.content}
+
+
+doctype html
+html
+  head
+    title= title
+    - var cs = 'UTF-8'
+    meta(charset='#{cs}')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
